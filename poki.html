@@ -8,7 +8,12 @@
   </head>
   
   <body>
-    <div id="game">
+    <div id="game-start">
+      <img id="openingImage" src="imgs/dungeonCrawlerTheme.webp" alt="Dungeon Crawler">
+      <button id="startButton">Start Game</button>
+  </div>
+    <div id="game" style="display: none;">
+      <img id = "dungeonBackground" src="imgs/cave.webp" alt="Dungeon" class="themeImages" style="display: none;">
       <div id="stats">
         <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
         <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>

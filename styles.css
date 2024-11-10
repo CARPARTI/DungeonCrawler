@@ -46,3 +46,38 @@ button{
     background-image: linear-gradient(#fecc4c, #ffac33);
     border: 3px solid #feac32;
 }
+
+#dungeonBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#game-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0a0a23;
+}
+
+#openingImage {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #feac32;
+    border: 3px solid #feac32;
+    border-radius: 5px;
+}

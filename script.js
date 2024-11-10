@@ -16,12 +16,23 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const dungeonBackground = document.querySelector("#dungeonBackground");
+const startButton = document.querySelector("#startButton");
+const gameStart = document.querySelector("#game-start");
+const game = document.querySelector("#game");
+
+startButton.onclick = function() {
+  gameStart.style.display = "none"; // Hide the opening image
+  game.style.display = "block";     // Show the main game
+};
+
 const weapons = [
   { name: 'stick', power: 5 },
   { name: 'dagger', power: 30 },
   { name: 'claw hammer', power: 50 },
   { name: 'sword', power: 100 }
 ];
+
 const monsters = [
   {
     name: "slime",
@@ -39,6 +50,7 @@ const monsters = [
     health: 300
   }
 ]
+
 const locations = [
   {
     name: "town square",
@@ -107,6 +119,7 @@ function update(location) {
 }
 
 function goTown() {
+  dungeonBackground.style.display = "none";
   update(locations[0]);
 }
 
@@ -115,6 +128,7 @@ function goStore() {
 }
 
 function goCave() {
+  dungeonBackground.style.display = "block";
   update(locations[2]);
 }
 
